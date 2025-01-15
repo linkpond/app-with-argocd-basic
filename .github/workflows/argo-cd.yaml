@@ -16,7 +16,7 @@ jobs:
         
     - name: Set up Image
       run: |
-        sed -i "s%image: nginx:1.25%image: nginx:latest%" ./argocd-deployment.yaml
+        sed -i "s%image: nginx:1.25%image: nginx:1.26%" ./argocd-deployment.yaml
         
     - name: Commit and push changes
       run: |
